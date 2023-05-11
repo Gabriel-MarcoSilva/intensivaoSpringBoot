@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "TB_GAME")
-public class game {
+public class Game {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,11 +26,11 @@ public class game {
     private String longDescription;
     private String platforms;
 
-    public game(){
+    public Game(){
 
     }
 
-    public game(long id, String name, Integer year, String genre, String imgUrl, String shortDescription, String longDescription, String platforms){
+    public Game(long id, String name, Integer year, String genre, String imgUrl, String shortDescription, String longDescription, String platforms){
         setId(id);
         setName(name);
         setYear(year);
@@ -111,7 +111,7 @@ public class game {
         if(obj == null) return false;
         if(getClass() != obj.getClass()) return false;
         
-        game other = (game) obj;
+        Game other = (Game) obj;
         return Objects.equals(id, other.id);
     }
 }

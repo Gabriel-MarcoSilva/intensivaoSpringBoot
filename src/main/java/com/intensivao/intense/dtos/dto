@@ -1,0 +1,5 @@
+"são objetos customizados com as informações que vou precisar" 
+"entrega um conjunto menor de dados da api"
+    exemplo: tem um array com [ name, age, id, email, grade ] e a DTO faz uma seleção dos dados a serem apresentados:
+    DTO: [ name, age ]
+classe independente, logo n está interligada com o banco
